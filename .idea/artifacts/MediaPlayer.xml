@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="MediaPlayer">
+    <output-path>$PROJECT_DIR$/out/artifacts/MediaPlayer</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="MainApp" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="MediaPlayer.jar">
+        <element id="module-output" name="MediaPlayer" />
+      </element>
+    </root>
+  </artifact>
+</component>

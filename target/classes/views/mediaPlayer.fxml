@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane fx:id="rootPane" onDragDropped="#onDragDropped" onDragOver="#onDragOver" onKeyPressed="#onKeyPressed" onMouseClicked="#onMouseClicked" onMouseMoved="#onMouseMoved" prefHeight="280.0" prefWidth="375.0" stylesheets="@../style/theme.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.baummar.Controllers.MediaPlayerController">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" layoutY="25.0" onKeyPressed="#onKeyPressed" onMouseClicked="#pausePlayVideo" preserveRatio="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </MediaView>
+      <MenuBar fx:id="menuBar" layoutY="25.0" prefHeight="0.0" prefWidth="375.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleMenuItemOpen" text="Open">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleMenuItemClose" text="Close" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Exit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleAboutMe" text="About" />
+               </items>
+            </Menu>
+         </menus>
+         <padding>
+            <Insets right="-1.0" />
+         </padding>
+      </MenuBar>
+      <Label fx:id="labelStatus" layoutX="15.0" layoutY="35.0" opacity="0.0" styleClass="label-popup" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="35.0" />
+      <Label fx:id="labelSpeed" opacity="0.0" styleClass="label-popup" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="35.0" />
+      <AnchorPane fx:id="controllers" layoutY="225.0" prefHeight="80.0" prefWidth="375.0" styleClass="controllers" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXSlider fx:id="timeSlider" disable="true" layoutX="85.0" layoutY="5.0" onMouseClicked="#onMouseClickedTimeSlider" value="-1.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+            <AnchorPane prefHeight="25.0" prefWidth="200.0" styleClass="black-color" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="375.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label fx:id="playStatus" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="375.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <Label fx:id="playTime" textFill="WHITE" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="20.0" prefHeight="30.0" prefWidth="275.0" AnchorPane.leftAnchor="10.0">
+               <children>
+                  <JFXButton fx:id="playButton" contentDisplay="GRAPHIC_ONLY" onAction="#handlePlay" ripplerFill="#ffffff00" styleClass="button-hover" text=" ">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="PLAY" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="pauseButton" contentDisplay="GRAPHIC_ONLY" onAction="#handlePause" styleClass="button-hover" text=" " viewOrder="2.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="PAUSE" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="stopButton" contentDisplay="GRAPHIC_ONLY" onAction="#handleStop" styleClass="button-hover" text=" " viewOrder="3.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="STOP" />
+                     </graphic>
+                  </JFXButton>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" onAction="#handleSkipBackward" styleClass="button-hover" text=" " viewOrder="4.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="FAST_BACKWARD" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" onAction="#handleDecreaseSpeed" styleClass="button-hover" text=" " viewOrder="5.0">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="BACKWARD" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" onAction="#handleIncreaseSpeed" styleClass="button-hover" text=" " viewOrder="6.0">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="FORWARD" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" onAction="#handleSkipForward" styleClass="button-hover" text=" " viewOrder="6.0">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="FAST_FORWARD" />
+                     </graphic>
+                  </JFXButton>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" styleClass="button-hover" text=" " viewOrder="7.0">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="STEP_FORWARD" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" layoutX="275.0" layoutY="20.0" prefHeight="30.0" prefWidth="100.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#handleMuteUnmute" onMousePressed="#onMouseClicked" styleClass="button-hover" text=" " viewOrder="8.0">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="volumeUpDown" glyphName="VOLUME_UP" text="" />
+                     </graphic>
+                     <tooltip>
+                        <Tooltip fx:id="toolTipMuteUnmute" text="Mute" />
+                     </tooltip>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXSlider fx:id="volumeSlider" prefHeight="20.0" prefWidth="70.0" value="-1.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXSlider>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

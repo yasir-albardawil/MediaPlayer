@@ -1,0 +1,82 @@
+* {
+    -fx-red: #D50000;
+    -fx-focused-color: #90CAF9;
+    -fx-focused-border-color: #64B5F6;
+}
+
+.white-color {
+    -fx-background-color: red;
+}
+
+.root {
+    -fx-background-color: black;
+}
+
+#anchorPane {
+    -fx-background-color: white;
+}
+
+.menu-bar {
+    -fx-background-color: white;
+}
+
+/*
+.menu-bar .label {
+    -fx-text-fill: black;
+}
+
+.context-menu {
+    -fx-background-color: gray;
+} */
+
+.black-color {
+    -fx-background-color: black;
+}
+
+.glyph-icon {
+    -glyph-size: 18;
+}
+
+.controllers {
+    -fx-background-color: white;
+}
+
+.label-popup {
+    -fx-background-color: #263238;
+    -fx-text-fill: #CFD8DC;
+    -fx-padding: 5;
+    -fx-font-size: 18;
+    -fx-alignment: center;
+    -fx-border-color: derive( #263238, 20%);
+}
+
+
+/*
+  Style slider
+
+  */
+.slider .track {
+    -fx-background-color: gray;
+}
+
+.slider .colored-track {
+    -fx-background-color: black;
+}
+
+.slider .animated-thumb {
+    -fx-background-color: -fx-red;
+}
+
+.slider .thumb {
+    -fx-background-color: black;
+}
+
+.selected {
+   -fx-background-color: -fx-focused-color;
+   -fx-border-color: -fx-focused-border-color;
+}
+
+
+.button-hover:hover {
+   -fx-background-color: derive(-fx-focused-color, 50%);
+}
