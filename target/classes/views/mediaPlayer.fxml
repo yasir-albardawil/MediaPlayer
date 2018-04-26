@@ -147,7 +147,7 @@
                         <Insets />
                      </HBox.margin>
                   </JFXButton>
-                  <JFXSlider fx:id="volumeSlider" prefHeight="20.0" prefWidth="70.0" value="-1.0">
+                  <JFXSlider fx:id="volumeSlider" prefHeight="20.0" prefWidth="70.0" value="100.0">
                      <HBox.margin>
                         <Insets right="10.0" />
                      </HBox.margin>
