@@ -6,7 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2699bef4-eca5-464b-9d53-bddadfec5747" name="Default" comment="" />
+    <list default="true" id="2699bef4-eca5-464b-9d53-bddadfec5747" name="Default" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/baummar/Model/Preferences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/baummar/Controllers/MediaPlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/baummar/Controllers/MediaPlayerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/baummar/Controllers/MediaPlayerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/baummar/Controllers/MediaPlayerController.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,13 +40,13 @@
       <file leaf-file-name="MediaPlayerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/baummar/Controllers/MediaPlayerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5848">
-              <caret line="386" column="43" selection-start-line="386" selection-start-column="39" selection-end-line="386" selection-end-column="43" />
+            <state relative-caret-position="296">
+              <caret line="388" column="46" selection-start-line="388" selection-start-column="46" selection-end-line="388" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MainApp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -47,6 +55,27 @@
                 <element signature="e#350#351#0" expanded="true" />
                 <element signature="e#378#379#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Preferences.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/baummar/Model/Preferences.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="57" selection-start-column="57" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -66,19 +95,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>close</find>
-      <find>gra</find>
-      <find>volumeSlider</find>
-      <find>muteIcon</find>
-      <find>muteI</find>
-      <find>Dow</find>
-      <find>volum</find>
-      <find>updateValues</find>
-      <find>key</find>
       <find>setFullSc</find>
       <find>volu</find>
       <find>Can</find>
-      <find>drag</find>
       <find>mediaPlay</find>
       <find>bind</find>
       <find>vol</find>
@@ -86,8 +105,6 @@
       <find>volume:</find>
       <find>On</find>
       <find>off</find>
-      <find>handle</find>
-      <find>handlePl</find>
       <find>playBu</find>
       <find>hand</find>
       <find>Media Pl</find>
@@ -96,6 +113,18 @@
       <find>stop</find>
       <find>handleStop</find>
       <find>handlePause</find>
+      <find>playVide</find>
+      <find>setPr</find>
+      <find>handlePl</find>
+      <find>mediaPlayer</find>
+      <find>open</find>
+      <find>Open</find>
+      <find>handle</find>
+      <find>drag</find>
+      <find>setPa</find>
+      <find>gs</find>
+      <find>play</find>
+      <find>pausePl</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,7 +152,6 @@
         <option value="$PROJECT_DIR$/src/main/java/net/baummar/Util/EffectUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/views/mediaPlayer1.fxml" />
         <option value="$PROJECT_DIR$/src/test/java/net/baummar/Controllers/MediaPlayerControllerTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/views/mediaPlayer.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/views/aboutMe.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/net/baummar/Controllers/AboutMeController.java" />
@@ -131,8 +159,14 @@
         <option value="$PROJECT_DIR$/src/main/java/net/baummar/Controllers/AboutController.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/baummar/Util/ShowWindowsUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/style/theme.css" />
-        <option value="$PROJECT_DIR$/src/main/java/net/baummar/Controllers/MediaPlayerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/MainApp.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/net/baummar/Model/Preferences.kt" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.txt" />
+        <option value="$PROJECT_DIR$/src/config.txt" />
+        <option value="$PROJECT_DIR$/config.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/net/baummar/Controllers/MediaPlayerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/baummar/Model/Preferences.java" />
       </list>
     </option>
   </component>
@@ -186,7 +220,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,69 +227,12 @@
               <item name="MediaPlayer" type="b2602c69:ProjectViewProjectNode" />
               <item name="MediaPlayer" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MediaPlayer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlayer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MediaPlayer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlayer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MediaPlayer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlayer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MediaPlayer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlayer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="baummar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MediaPlayer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlayer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="baummar" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MediaPlayer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlayer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MediaPlayer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlayer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="icons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MediaPlayer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MediaPlayer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="style" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -272,11 +248,20 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.1670282" />
     <property name="project.structure.side.proportion" value="0.4609375" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="net.baummar.Controllers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Zs149\Documents\GitHub\MediaPlayer\src" />
+      <recent name="C:\Users\Zs149\Documents\GitHub\MediaPlayer\src\main\resources" />
+      <recent name="C:\Users\Zs149\IdeaProjects\MediaPlayer\src\main\resources\views" />
+      <recent name="C:\Users\Zs149\IdeaProjects\MediaPlayer\src\main\resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="net.baummar.Util" />
@@ -285,13 +270,6 @@
       <recent name="C:\Users\Zs149\IdeaProjects\MediaPlayer\src\main\resources\icons" />
       <recent name="C:\Users\Zs149\IdeaProjects\MediaPlayer\src\main\java\net\baummar\Util" />
       <recent name="C:\Users\Zs149\IdeaProjects\MediaPlayer\src\main\resources\views" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Zs149\IdeaProjects\MediaPlayer\src\main\resources\views" />
-      <recent name="C:\Users\Zs149\IdeaProjects\MediaPlayer\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -375,31 +353,33 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3296355" />
-      <window_info id="DB Browser" order="7" weight="0.329429" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info id="Image Layers" order="8" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" weight="0.3296355" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014641" side_tool="true" weight="0.25437203" />
-      <window_info anchor="right" id="Maven Projects" order="11" weight="0.22541603" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49853587" weight="0.30363035" />
-      <window_info anchor="bottom" id="Terminal" order="16" weight="0.3290938" />
+      <window_info anchor="right" id="Maven Projects" order="11" weight="0.32980332" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.25642964" />
       <window_info id="Project Explorer" order="4" />
       <window_info id="Job Explorer" order="5" />
       <window_info anchor="bottom" id="Console" order="11" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="6" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3960396" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3296355" />
+      <window_info id="DB Browser" order="7" weight="0.329429" />
+      <window_info active="true" anchor="bottom" id="Messages" order="13" visible="true" weight="0.3250825" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info id="Image Layers" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49853587" weight="0.30363035" />
+      <window_info anchor="bottom" id="Terminal" order="16" weight="0.3290938" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.27987897" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info id="Favorites" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3960396" />
       <window_info anchor="bottom" id="Application Servers" order="9" />
       <window_info anchor="bottom" id="Changes" order="12" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -409,7 +389,6 @@
       <window_info anchor="bottom" id="Problems" order="15" />
       <window_info anchor="bottom" id="Profiler" order="10" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.3250825" />
       <window_info anchor="right" id="FAQ Robot" order="9" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32673267" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -420,45 +399,37 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/baummar/Util/ShowWindowsUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/baummar/Model/Preferences.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="87" lean-forward="true" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
+        <state relative-caret-position="612">
+          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/baummar/Util/FileUtilites.kt" />
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/util/stream/Stream.java">
+    <entry file="file://$PROJECT_DIR$/config.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="196" column="18" selection-start-line="196" selection-start-column="18" selection-end-line="196" selection-end-column="18" />
+        <state>
+          <caret column="57" lean-forward="true" selection-start-column="57" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/util/Collection.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/baummar/Controllers/MediaPlayerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="579" column="22" selection-start-line="579" selection-start-column="22" selection-end-line="579" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/javafx.base/javafx/beans/property/Property.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.desktop/java/awt/MenuBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+        <state relative-caret-position="8092">
+          <caret line="476" column="20" selection-start-line="476" selection-start-column="20" selection-end-line="476" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -567,13 +538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2525">
           <caret line="200" selection-start-line="200" selection-end-line="200" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -745,10 +709,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/baummar/Controllers/MediaPlayerController.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5848">
-          <caret line="386" column="43" selection-start-line="386" selection-start-column="39" selection-end-line="386" selection-end-column="43" />
+        <state relative-caret-position="153">
+          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -759,6 +723,37 @@
           <folding>
             <element signature="e#350#351#0" expanded="true" />
             <element signature="e#378#379#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar!/com/google/gson/Gson.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="81" column="29" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="57" selection-start-column="57" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/baummar/Controllers/MediaPlayerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="388" column="46" selection-start-line="388" selection-start-column="46" selection-end-line="388" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/baummar/Model/Preferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

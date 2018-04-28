@@ -23,6 +23,7 @@ import javafx.scene.media.*;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+import net.baummar.Model.Preferences;
 import net.baummar.Util.DateTimeUtil;
 import net.baummar.Util.FileUtilities;
 import net.baummar.Util.ShowWindowsUtil;
@@ -202,6 +203,11 @@ public class MediaPlayerController implements Initializable {
 
     @FXML
     void handlePlay(ActionEvent event) {
+        boolean isFileEmpty = Preferences.getPreference() == null;
+        if (!isFileEmpty) {
+            playVideo(Preferences.getPreference().getPath());
+        }
+
         if ((mediaPlayer != null)
             && (MediaPlayer.Status.PAUSED == getMediaPlayerStatus()
             || MediaPlayer.Status.READY == getMediaPlayerStatus()
@@ -276,6 +282,7 @@ public class MediaPlayerController implements Initializable {
                         mediaPlayer.stop();
                         maximized(true);
                         playVideo(filePath.toAbsolutePath().toString());
+                        saveLastPath(filePath.toAbsolutePath().toString());
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -372,11 +379,15 @@ public class MediaPlayerController implements Initializable {
             playStatus.setText("Playing");
             labelStatus.setText("Play");
             setFadeTransition(labelStatus);
+            playButton.getStyleClass().add("selected");
+            pauseButton.getStyleClass().remove("selected");
         } else if (status == MediaPlayer.Status.PLAYING){
             mediaPlayer.pause();
             playStatus.setText("Paused");
             labelStatus.setText("Pause");
             setFadeTransition(labelStatus);
+            playButton.getStyleClass().remove("selected");
+            pauseButton.getStyleClass().add("selected");
         }
     }
 
@@ -416,6 +427,7 @@ public class MediaPlayerController implements Initializable {
             if (mediaPlayer == null) {
                 maximized(true);
                 playVideo(file.toString());
+                saveLastPath(file.toString());
                 bindMediaPlayerControls(mediaPlayer);
             } else {
                 mediaPlayer.dispose();
@@ -539,6 +551,11 @@ public class MediaPlayerController implements Initializable {
         fadeTransition.setFromValue(1);
         fadeTransition.setToValue(0);
         fadeTransition.play();
+    }
+
+    private void saveLastPath(String file) {
+        Preferences preferences = new Preferences();
+        Preferences.setPerseverance(preferences.setPath(file.toString()));
     }
 
     private MediaPlayer.Status getMediaPlayerStatus() {
